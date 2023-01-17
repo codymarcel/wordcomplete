@@ -11,7 +11,7 @@ The entire implementation is driven from the unit tests. There is not main funct
 Most of the tests use a simple DB created using addWord() to prove correctness of the algorith. 
 
 ## Building
-From the command line you can simply run `mvn test` and all the tests will run. There isn't a lot of useful outout there though. 
+From the command line you can simply run `mvn test` and all the tests will run. There isn't a lot of useful output there though. 
 
 ## Requirements
 >1. Select a data structure that provides word-level auto-completions, given a specific prefix. The prefix “pi” should, for example, result in a list of words like “pizza”, “pie”, “pineapple,” and so on. The total number of returned words can be limited to N=20.
