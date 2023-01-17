@@ -2,7 +2,9 @@
 ## Summary
 This is the solution to the wordcomplete problem. This implementation uses a PatriciaTrie data struct to efficiently store dictionary word keys to Integer values that represent the number of times a given word has been hit. This hit count is then used to rank the results in the getCompletsions() search method in the API. 
 
-The full English language dictionary provided is about 16MB in size, however we are only storing the word->hitCount rather than the entire dictionary. I didn't calculate actual size of the Trie, however, these numbers can be used as a upper bound on space since the Trie will be a subset of this. Additionally, the PatriciaTrie compresses the data structure to have a minimal memory footprint. This should easily fit memory on any commodity hardware.
+The worst case runtime comlexity for all operations on the data structure is O(k), where k = length of the longest key within the dictionary.
+
+In terms of space, the full English language dictionary provided is about 16MB in size, however we are only storing the word->hitCount rather than the entire dictionary. I didn't calculate actual size of the Trie, however, these numbers can be used as a upper bound on space since the Trie will be a subset of this. Additionally, the PatriciaTrie compresses the data structure to have a minimal memory footprint. This should easily fit memory on any commodity hardware.
 
 The entire implementation is driven from the unit tests. There is not main function to run. The tests are located here:
 >/Users/cody/Documents/job/cribl/wordcomplete/src/test/java/com/cribl/app/engine/WordLookupEnginerTest.java
