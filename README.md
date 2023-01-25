@@ -7,8 +7,8 @@ The worst case runtime comlexity for all operations on the data structure is O(k
 In terms of space, the full English language dictionary provided is about 16MB in size, however we are only storing the word->hitCount rather than the entire dictionary. I didn't calculate actual size of the Trie, however, these numbers can be used as a upper bound on space since the Trie will be a subset of this. Additionally, the PatriciaTrie compresses the data structure to have a minimal memory footprint. This should easily fit memory on any commodity hardware.
 
 The entire implementation is driven from the unit tests. There is not main function to run. The tests are located here:
->/Users/cody/Documents/job/cribl/wordcomplete/src/test/java/com/cribl/app/engine/WordLookupEnginerTest.java
->/Users/cody/Documents/job/cribl/wordcomplete/src/test/java/com/cribl/data/DataLoaderTest.java
+>.../cribl/wordcomplete/src/test/java/com/cribl/app/engine/WordLookupEnginerTest.java
+>.../cribl/wordcomplete/src/test/java/com/cribl/data/DataLoaderTest.java
 
 Most of the tests use a simple DB created using addWord() to prove correctness of the algorith. 
 
